@@ -23,7 +23,7 @@ cd /Users/james/projects/01-projects/andamio-obsidian-plugin
 git init
 
 # Add remote repository
-git remote add origin https://github.com/YOUR_ORG/andamio-obsidian-plugin.git
+git remote add origin https://github.com/Andamio-Platform/andamio-obsidian-plugin.git
 
 # Push to GitHub
 git add .
@@ -49,7 +49,7 @@ Current manifest.json should have:
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Read data from Andamio APIs and create Markdown files in your vault",
-	"author": "YOUR_NAME or Andamio",
+	"author": "Andamio",
 	"authorUrl": "https://andamio.io",
 	"isDesktopOnly": false
 }
@@ -194,7 +194,7 @@ Until this plugin is approved for the Community Plugin directory, you can instal
 
 1. Clone your fork:
 ```bash
-git clone https://github.com/YOUR_ORG/obsidian-releases.git
+git clone https://github.com/Andamio-Platform/obsidian-releases.git
 cd obsidian-releases
 ```
 
@@ -205,7 +205,7 @@ cd obsidian-releases
 	"name": "Andamio",
 	"author": "Andamio",
 	"description": "Read data from Andamio APIs and create Markdown files in your vault",
-	"repo": "YOUR_ORG/andamio-obsidian-plugin"
+	"repo": "Andamio-Platform/andamio-obsidian-plugin"
 }
 ```
 
@@ -231,7 +231,7 @@ git push origin main
 ```markdown
 ## Plugin Submission: Andamio
 
-**Repository**: https://github.com/YOUR_ORG/andamio-obsidian-plugin
+**Repository**: https://github.com/Andamio-Platform/andamio-obsidian-plugin
 
 ### Description
 Andamio is a plugin that fetches lesson data from Andamio APIs and creates organized Markdown files in the user's vault. It parses ProseMirror/TipTap JSON content and creates a hierarchical folder structure for courses, modules, and lessons.

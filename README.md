@@ -14,24 +14,19 @@ An Obsidian plugin that fetches lesson data from Andamio APIs and creates Markdo
 
 ## Installation
 
-### For Users (Once Published)
+### Manual Installation
 
-This plugin will be available in Obsidian's Community Plugins directory. Once approved:
-1. Open Obsidian Settings
-2. Go to Community Plugins
-3. Click "Browse"
-4. Search for "Andamio"
-5. Click "Install" and enable
+1. Download the latest release from the [Releases page](https://github.com/Andamio-Platform/andamio-obsidian-plugin/releases)
+2. Download `main.js` and `manifest.json` from the release assets
+3. In your Obsidian vault, create the folder: `.obsidian/plugins/andamio-obsidian-plugin/`
+4. Copy `main.js` and `manifest.json` into that folder
+5. Restart Obsidian (or reload with Ctrl/Cmd + R)
+6. Go to Settings → Community Plugins
+7. Enable "Andamio"
 
-### Manual Installation (For Now)
+### Community Plugins (Future)
 
-Until the plugin is approved for the Community Plugins directory:
-1. Download the latest release from the [Releases page](https://github.com/YOUR_ORG/andamio-obsidian-plugin/releases)
-2. Extract `main.js` and `manifest.json`
-3. Create folder `{vault}/.obsidian/plugins/andamio-obsidian-plugin/`
-4. Copy the files into that folder
-5. Reload Obsidian
-6. Enable the plugin in Settings > Community Plugins
+This plugin may be submitted to Obsidian's Community Plugins directory in the future. If approved, it will be available directly within Obsidian's plugin browser.
 
 ## Development
 

@@ -1,8 +1,8 @@
 # Team Installation Guide
 
-This guide is for installing the Andamio Obsidian Plugin **without** waiting for Community Plugin approval. Your team can start using it immediately.
+This guide is for installing the Andamio Obsidian Plugin. Your team can start using it immediately.
 
-## Option 1: Install from GitHub Release (Recommended)
+## Option 1: Install from GitHub Release (Recommended for Users)
 
 ### For You (Releasing)
 
@@ -20,38 +20,46 @@ npm run build
 
 ### For Your Team (Installing)
 
-1. **Download the files**:
-   - Get `main.js` and `manifest.json` (from GitHub release or shared files)
+**Step 1: Download the Release Files**
 
-2. **Install in their vault**:
-```bash
-# Navigate to their vault
-cd /path/to/their/obsidian-vault
+1. Go to the [Releases page](https://github.com/Andamio-Platform/andamio-obsidian-plugin/releases)
+2. Click on the latest release
+3. Download both files from the "Assets" section:
+   - `main.js`
+   - `manifest.json`
 
-# Create the plugin folder
-mkdir -p .obsidian/plugins/andamio-obsidian-plugin
+**Step 2: Install in Obsidian**
 
-# Copy the files (they'll need to get main.js and manifest.json somehow)
-cp /path/to/main.js .obsidian/plugins/andamio-obsidian-plugin/
-cp /path/to/manifest.json .obsidian/plugins/andamio-obsidian-plugin/
-```
+1. Open your Obsidian vault folder in Finder/Explorer
+2. Navigate to or create: `.obsidian/plugins/andamio-obsidian-plugin/`
+   - On Mac: Show hidden files with `Cmd + Shift + .`
+   - Full path example: `/path/to/vault/.obsidian/plugins/andamio-obsidian-plugin/`
+3. Copy the downloaded `main.js` and `manifest.json` into that folder
+4. Restart Obsidian (or reload with `Ctrl/Cmd + R`)
 
-3. **Enable in Obsidian**:
-   - Restart Obsidian (or reload with Ctrl/Cmd + R)
-   - Go to Settings → Community Plugins
-   - Find "Andamio" in the list
-   - Toggle it on
+**Step 3: Enable the Plugin**
 
-4. **Configure**:
-   - Go to Settings → Andamio
-   - Set API Base URL (default: `http://localhost:3000`)
-   - Set Target Folder (default: `Andamio`)
+1. Open Obsidian Settings (gear icon)
+2. Go to **Community Plugins**
+3. Find "Andamio" in the installed plugins list
+4. Toggle it **on**
 
-5. **Use it**:
-   - Click the download icon in the left ribbon
-   - Or use Command Palette → "Fetch Andamio content"
-   - Enter course NFT policy ID and module code
-   - Files will be created!
+**Step 4: Configure**
+
+1. Still in Settings, click on **Andamio** in the plugin list
+2. Configure:
+   - **API Base URL**: `http://localhost:3000` (or your API URL)
+   - **Target Folder**: `Andamio` (or where you want files saved)
+
+**Step 5: Use It**
+
+1. Click the **download icon** in the left sidebar ribbon
+2. Or open **Command Palette** (`Cmd/Ctrl + P`) → type "Fetch Andamio content"
+3. Enter:
+   - Course NFT Policy ID
+   - Module Code
+4. Click **Fetch**
+5. Files will be created in your vault!
 
 ## Option 2: Git Clone/Symlink (For Developers)
 
@@ -62,7 +70,7 @@ If your team wants to contribute or modify the plugin:
 1. **Clone the repo**:
 ```bash
 cd ~/projects/01-projects
-git clone https://github.com/YOUR_ORG/andamio-obsidian-plugin.git
+git clone https://github.com/Andamio-Platform/andamio-obsidian-plugin.git
 # OR if they already have access:
 # Just pull latest: git pull
 ```
@@ -77,7 +85,7 @@ npm run dev  # This watches for changes
 3. **Symlink to their vault**:
 ```bash
 # Create symlink from vault to dev folder
-ln -s /Users/THEIR_USERNAME/projects/01-projects/andamio-obsidian-plugin /path/to/their/vault/.obsidian/plugins/andamio-obsidian-plugin
+ln -s ~/projects/01-projects/andamio-obsidian-plugin /path/to/their/vault/.obsidian/plugins/andamio-obsidian-plugin
 ```
 
 4. **Enable and reload** (same as Option 1 steps 3-5)

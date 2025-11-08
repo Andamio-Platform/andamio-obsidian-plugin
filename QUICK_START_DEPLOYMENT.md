@@ -60,7 +60,7 @@ On GitHub:
 
 ```bash
 # Fork obsidianmd/obsidian-releases
-git clone https://github.com/YOUR_ORG/obsidian-releases.git
+git clone https://github.com/Andamio-Platform/obsidian-releases.git
 cd obsidian-releases
 
 # Edit community-plugins.json, add:
@@ -69,7 +69,7 @@ cd obsidian-releases
   "name": "Andamio",
   "author": "Andamio",
   "description": "Read data from Andamio APIs and create Markdown files in your vault",
-  "repo": "YOUR_ORG/andamio-obsidian-plugin"
+  "repo": "Andamio-Platform/andamio-obsidian-plugin"
 }
 
 # Commit and push
