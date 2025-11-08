@@ -22,16 +22,27 @@ export class MarkdownGenerator {
 		// Escape double quotes in YAML values
 		const escapeYaml = (str: string) => str.replace(/"/g, '\\"');
 
-		return `---
+		let frontmatter = `---
 id: ${lesson.id}
 title: "${escapeYaml(lesson.title)}"
 module: "${escapeYaml(moduleTitle)}"
 moduleCode: "${moduleCode}"
-description: "${escapeYaml(lesson.description)}"
+description: "${escapeYaml(lesson.description)}"`;
+
+		// Add SLT if available
+		if (lesson.slt) {
+			frontmatter += `
+slt: "${escapeYaml(lesson.slt.sltText)}"
+sltModuleIndex: ${lesson.slt.moduleIndex}`;
+		}
+
+		frontmatter += `
 ---
 
 # ${lesson.title}
 `;
+
+		return frontmatter;
 	}
 
 	/**

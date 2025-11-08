@@ -11,6 +11,10 @@ export interface Lesson {
 	title: string;
 	description: string;
 	contentJson: ContentDoc;
+	slt?: {
+		sltText: string;
+		moduleIndex: number;
+	};
 }
 
 // ProseMirror/TipTap Content Types
