@@ -1,7 +1,7 @@
 {
 	"id": "andamio-obsidian-plugin",
 	"name": "Andamio",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"minAppVersion": "0.15.0",
 	"description": "Read data from Andamio APIs and create Markdown files in your vault",
 	"author": "James",
